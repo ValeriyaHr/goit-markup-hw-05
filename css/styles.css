@@ -708,6 +708,15 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .modal {
@@ -783,10 +792,6 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     margin-bottom: 16px;
     max-width: 360px;
     color: #2E2F42;
-  }
-
-  .modal-form {
-
   }
 
   .modal-label{
@@ -888,40 +893,41 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     justify-content: center;
     fill: transparent;
   }
-
- 
-
   .privacy-label {
     display: inline-block;
     cursor: pointer;
   }
-
   .icon-checkbox {
     width: 16px;
     height: 16px;
-  
   }
-  .check-privacy input[type="checkbox"]:not(:checked) + label .icon-checkbox {
-    display: none; /* Скрыть svg */
+  /* .check-privacy input[type="checkbox"]:not(:checked) + label .icon-checkbox {
+    display: none;
   }
- .check-privacy input[type="checkbox"]:checked icon-span{
+ .check-privacy input[type="checkbox"]:checked + label .icon-span{
     border: none;
     background-color: #404bbf;
     fill:#F4F4FD;
  }
-   /* Стили для выбранного чекбокса */
+
    .check-privacy input[type="checkbox"]:checked + label .icon-checkbox {
-    display: inline-block; /* Показать svg */
+    display: inline-block;
+  } */
+  
+  .check-privacy input[type="checkbox"]:not(:checked) + label .icon-span {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    fill: transparent;
   }
   
+  .check-privacy input[type="checkbox"]:checked + label .icon-span {
+    border: none;
+    background-color: #404bbf;
+    fill: #F4F4FD;
+  }
    .conditions_link{
     color: #4d5ae5;
-
    }
-
-  .link-checkbox {
-    color: #4d5ae5;
-  }
 
   .button-sent {
     display: block; 
