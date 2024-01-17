@@ -904,7 +904,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
   .check-privacy input[type="checkbox"]:not(:checked) + label .icon-checkbox {
     display: none; /* Скрыть svg */
   }
- .check-privacy input[type="checkbox"]:checked span{
+ .check-privacy input[type="checkbox"]:checked icon-span{
     border: none;
     background-color: #404bbf;
     fill:#F4F4FD;
