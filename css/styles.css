@@ -751,6 +751,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
   .button-close:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
   }
 
   .icon-close {
@@ -791,6 +792,10 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     font-weight: 400;
     letter-spacing: 0.04em;
     line-height: 1.17;
+  }
+
+  .label-comment {
+    margin-bottom: 16px;
   }
 
   .modal-input {
