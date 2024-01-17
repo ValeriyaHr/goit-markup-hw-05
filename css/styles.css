@@ -946,3 +946,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
    
     margin-bottom: 24px;
   }
+  
+  .button-sent:hover,  .button-sent:focus{
+    fill: #ffffff
+  }
