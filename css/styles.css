@@ -752,7 +752,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     border: none;
     fill: #ffffff;
   }
-  
+
 .button-close:focus {
     background-color: #404bbf;
     border: none;
@@ -889,9 +889,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     fill: transparent;
   }
 
-  .conditions{
-    color: #4d5ae5;
-  }
+ 
 
   .privacy-label {
     display: inline-block;
@@ -906,13 +904,21 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
   .check-privacy input[type="checkbox"]:not(:checked) + label .icon-checkbox {
     display: none; /* Скрыть svg */
   }
-
+ .check-privacy input[type="checkbox"]:checked span{
+    border: none;
+    background-color: #404bbf;
+    fill:#F4F4FD;
+ }
    /* Стили для выбранного чекбокса */
    .check-privacy input[type="checkbox"]:checked + label .icon-checkbox {
     display: inline-block; /* Показать svg */
   }
   
-   
+   .conditions_link{
+    color: #4d5ae5;
+
+   }
+
   .link-checkbox {
     color: #4d5ae5;
   }
