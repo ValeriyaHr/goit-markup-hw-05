@@ -660,11 +660,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     display: flex;
     gap: 24px;
   }
-
-  .label-subscribe {
-
-  }
-
+  
   .input-label-subscribe{
     width: 264px;
     height: 40px;
