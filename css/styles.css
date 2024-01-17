@@ -901,18 +901,6 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     width: 16px;
     height: 16px;
   }
-  /* .check-privacy input[type="checkbox"]:not(:checked) + label .icon-checkbox {
-    display: none;
-  }
- .check-privacy input[type="checkbox"]:checked + label .icon-span{
-    border: none;
-    background-color: #404bbf;
-    fill:#F4F4FD;
- }
-
-   .check-privacy input[type="checkbox"]:checked + label .icon-checkbox {
-    display: inline-block;
-  } */
   
   .check-privacy input[type="checkbox"]:not(:checked) + label .icon-span {
     border: 1px solid rgba(46, 47, 66, 0.4);
