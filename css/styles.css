@@ -747,8 +747,13 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
 
   }
 
-  .button-close:hover,
-  .button-close:focus {
+  .button-close:hover{
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+  }
+  
+.button-close:focus {
     background-color: #404bbf;
     border: none;
     fill: #ffffff;
@@ -892,26 +897,22 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     display: inline-block;
     cursor: pointer;
   }
+
+  .icon-checkbox {
+    width: 16px;
+    height: 16px;
   
-  .privacy-label .icon-checkbox {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .privacy-label input:checked + .icon-checkbox {
-    background-color: #404bbf;
-    border: none;
-    fill: #f4f4fd;
+  .check-privacy input[type="checkbox"]:not(:checked) + label .icon-checkbox {
+    display: none; /* Скрыть svg */
   }
 
+   /* Стили для выбранного чекбокса */
+   .check-privacy input[type="checkbox"]:checked + label .icon-checkbox {
+    display: inline-block; /* Показать svg */
+  }
+  
+   
   .link-checkbox {
     color: #4d5ae5;
   }
@@ -936,6 +937,6 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 24px;
+   
     margin-bottom: 24px;
   }
