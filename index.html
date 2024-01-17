@@ -382,27 +382,25 @@
         </div>
         
 <!-- Форма для емейла-->
-        <div class="subscribe-conteiner">
-          <b class="p-text footer-media">Subscribe</b>
-            <form>
-              <div class="form-subscribe">
+        <div class="conteiner-form">
+          <b class="Subscribe-text">Subscribe</b>
+            <form class="form-subscribe">
 
-                <label for="user-mails"></label>
-                <input 
-                type="email" 
-                name="user-mails"
-                id="user-mails"
-                placeholder="E-mail"
-                autofocus/>
-          
-                <button type="submit" class="button-subscribe">Subscribe
-                  <span><svg class="icon-send" width="24px" height="24px">
-                      <use href="./Images/icons.svg#icon-icon_send"></use>
-                    </svg>
-                  </span>
-                </button>
+              <label for="user-mails" class="label-subscribe">
+              <input 
+              class="input-label-subscribe"
+              type="email" 
+              name="user-mails"
+              id="user-mails"
+              placeholder="E-mail"
+              autofocus/></label>
+        
+              <button type="submit" class="button-subscribe">Subscribe
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./Images/icons.svg#icon-icon_send"></use>
+                </svg>
+              </button>
     
-              </div>
             </form>
         </div>
         
@@ -454,25 +452,29 @@
           </div>
     
           <div class="label-comment">
-          <label for="user-comment" class="modal-label">Comment</label>
-          <textarea 
-            name="user-comment" 
-            id="user-comment" 
-            placeholder="Text input"
-            class="modal-text"
-          ></textarea>
+            <label for="user-comment" class="modal-label">Comment</label>
+            <textarea 
+              name="user-comment" 
+              id="user-comment" 
+              placeholder="Text input"
+              class="modal-text"
+            ></textarea>
           </div>
     
-            <div class="agree">
-              <input class="checkbox visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy">
-              <label class="agree-label" for="user-privacy">
-                <span class="icon-checkbox conditions"></span>
-                I accept the terms and conditions of the
-                <a href=""><span class="link-checkbox"> Privacy Policy</span></a>
-              </label>
-            </div>
-              
-            <button type="submit" class="button-sent">Send</button>
+          <div class="agree">
+            <input class="checkbox visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy">
+            <label class="agree-label" for="user-privacy">
+              <span class="icon-checkbox">
+                <svg class="icon-checkbox-svg" width="10" height="8">
+                  <use href="./images/icons.svg#icon-property-click"></use>
+                </svg>
+              </span>
+              <span class="conditions">I accept the terms and conditions of the
+              <a href=""><span class="link-checkbox"> Privacy Policy</span></a>
+            </label>
+          </div>
+            
+          <button type="submit" class="button-sent">Send</button>
     
       </form>
     </div>
