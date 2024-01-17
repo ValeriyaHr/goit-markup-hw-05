@@ -747,13 +747,13 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
 
   }
 
-  .button-close:hover{
+  .button-close:hover,.button-close:hover svg{
     background-color: #404bbf;
     border: none;
     fill: #ffffff;
   }
 
-.button-close:focus {
+  .button-close:focus, .button-close:focus svg{
     background-color: #404bbf;
     border: none;
     fill: #ffffff;
