@@ -672,7 +672,8 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
   }
 
   .button-close {
@@ -684,27 +685,33 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     border-radius: 50%;
     cursor: pointer;
     color: currentColor;
-    background-color: #E7E9FC;
     width: 24px;
     height: 24px;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   }
 
   .button-close:hover,
   .button-close:focus {
-    background-color: #404BBF;
-    fill: #E7E9FC;
+    background-color: #404bbf;
+    border: none;
   }
 
   .icon-close {
-    fill: currentColor;
     background-color: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .icon-close:hover,
   .icon-close:focus {
     background-color: #404BBF;
-    fill: #E7E9FC;
+    fill: #ffffff;
   }
 
   .left-data {
@@ -712,11 +719,13 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
     max-width: 360px;
+    color: #2E2F42;
   }
 
   .modal-form {
@@ -727,8 +736,8 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
   }
 
   .modal-input {
@@ -736,6 +745,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
     outline: transparent;
     padding-left: 38px;
@@ -764,6 +774,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .modal-input-wrap {
