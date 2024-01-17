@@ -461,11 +461,14 @@
             ></textarea>
           </div>
           
-          <div class="agree">
-            <label class="agree-label">
-              <input class="checkbox" type="checkbox">
-              <span class="icon-checkbox"></span>
-              I accept the terms and conditions of the<a href=""><span class="conditions">Privacy Policy</span></a>
+          <div class="check-privacy">
+            <input  id="user-privacy" class="checkbox-input visually-hidden" type="checkbox" value="true" name="user-privacy">/>
+            <label class="privacy-label" for="user-privacy">I accept the terms and conditions of the
+              <span class="icon-span">
+                <svg class="icon-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-property-click"></use> 
+                </svg>
+              </span><a href=""><span class="conditions">Privacy Policy</span></a>
             </label>
           </div>
 
