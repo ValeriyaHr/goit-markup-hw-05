@@ -884,6 +884,10 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     fill: transparent;
   }
 
+  .conditions{
+    color: #4d5ae5;
+  }
+
   .privacy-label {
     display: inline-block;
     cursor: pointer;
