@@ -539,6 +539,8 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
 
 .footer-text {
     color: #F4F4FD;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;  
     max-width: 264px;
@@ -753,31 +755,17 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   }
 
-  .button-close:hover,.button-close:hover svg{
-    background-color: #404bbf;
-    border: none;
-    fill: #ffffff;
-  }
-
-  .button-close:focus, .button-close:focus svg{
-    background-color: #404bbf;
+  .button-close:hover, .button-close:focus {
+    background-color: #404BBF;
     border: none;
     fill: #ffffff;
   }
 
   .icon-close {
     background-color: none;
-    fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .icon-close:hover,
-  .icon-close:focus {
-    background-color: #404BBF;
-    fill: #ffffff;
   }
 
   .left-data {
@@ -901,6 +889,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     width: 16px;
     height: 16px;
   }
+
   
   .check-privacy input[type="checkbox"]:not(:checked) + label .icon-span {
     border: 1px solid rgba(46, 47, 66, 0.4);
