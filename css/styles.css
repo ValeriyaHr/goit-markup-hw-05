@@ -535,7 +535,7 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     transform:  translateY(0%);
 }
 
-Футер
+/* Футер */
 
 .footer-text {
     color: #F4F4FD;
@@ -885,11 +885,6 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     display: inline-block;
     cursor: pointer;
   }
-  .icon-checkbox {
-    width: 16px;
-    height: 16px;
-  }
-
   
   .check-privacy input[type="checkbox"]:not(:checked) + label .icon-span {
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -926,10 +921,9 @@ a.adress-info:hover, a.adress-info:active, a.adress-info:focus {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-   
     margin-bottom: 24px;
   }
   
   .button-sent:hover,  .button-sent:focus{
-    fill: #ffffff
+    fill: #ffffff;
   }
